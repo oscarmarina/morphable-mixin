@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Demo - morphable-element</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:image/x-icon;base64, " />
+    <style>
+      :root {
+        font-family: sans-serif;
+      }
+      section {
+        max-width: 50rem;
+        margin: 1rem auto;
+      }
+      section div {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(12.5rem, 1fr));
+        gap: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>Default</p>
+      <div>
+        <morphable-element count="5" active message="hello">
+          <code></code>
+        </morphable-element>
+
+        <morphable-element message="hello123">
+          <code></code>
+        </morphable-element>
+      </div>
+    </section>
+    <section>
+      <p>Extend</p>
+      <div>
+        <morphable-element-extend><code></code></morphable-element-extend>
+        <morphable-element-extend count="10"><code></code></morphable-element-extend>
+      </div>
+    </section>
+
+    <script type="module" src="./morphable-element.js"></script>
+    <script type="module" src="./morphable-element-extend.js"></script>
+  </body>
+</html>

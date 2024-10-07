@@ -1,0 +1,24 @@
+{
+  "files": {
+    "Morphable.js": {
+      "position": 0
+    },
+    "morphable.html": {
+      "position": 1
+    },
+    "morphable-element.js": {
+      "position": 2
+    },
+    "morphable-element-extend.js": {
+      "position": 3
+    },
+    "morphable-element-styles.css.js": {
+      "position": 4,
+      "hidden": true
+    },
+    "package.json": {
+      "position": 5,
+      "hidden": true
+    }
+  }
+}
