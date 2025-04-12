@@ -7,9 +7,18 @@ export class MorphableElement extends MorphableMixin(LitElement) {
   static styles = styles;
 
   static properties = {
-    message: {type: String, reflect: true},
-    count: {type: Number, reflect: true},
-    active: {type: Boolean, reflect: true},
+    message: {
+      type: String,
+      reflect: true,
+    },
+    count: {
+      type: Number,
+      reflect: true,
+    },
+    active: {
+      type: Boolean,
+      reflect: true,
+    },
   };
 
   constructor() {
