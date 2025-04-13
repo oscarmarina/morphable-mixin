@@ -10,14 +10,18 @@ export class MorphableElement extends MorphableMixin(LitElement) {
     message: {
       type: String,
       reflect: true,
+      useDefault: true,
+      reflectDefault: true,
     },
     count: {
       type: Number,
       reflect: true,
+      useDefault: true,
     },
     active: {
       type: Boolean,
       reflect: true,
+      useDefault: true,
     },
   };
 
